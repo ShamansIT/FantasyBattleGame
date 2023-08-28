@@ -1,0 +1,50 @@
+The following patterns were used when creating the project:
+1. DI (Spring)
+2. Abstract Factory
+3. Decorator
+
+Rules of the game:
+The game creates a squad of a certain race, consisting of one mage, three archers and four fighters. Four races are provided: elves, humans, orcs, undead. Elves and humans play against orcs and undead.
+All squad characters are divided into two groups: normal and privileged (with improved indicators). A character with an enhancement applied to it is privileged and can use its abilities in the current round. The amount of damage inflicted for privileged characters increases by one and a half times.
+
+In one turn, each character in the squad can perform one action. The enemy (system) chooses the action and the order of the characters in a random order.
+
+From the beginning of the game, each character has a health level equal to 20 HP.
+
+Character abilities:
+Race of Elves:
+    magician:
+        applying an improvement to the character of your squad (+50% hit power)
+        dealing magic damage to the enemy character for 10 HP
+    bowman:
+        shoot a bow (damage 7 HP)
+        attack enemy (damage 3 HP)
+    warrior:
+        attack with sword (15 HP damage)
+Race of people:
+    magician:
+        imposing an improvement on the character of your squad (+50% hit power)
+        attack with magic (dealing 4 HP damage)
+    crossbowman:
+        shoot crossbow (damage 5 HP)
+        attack (dealing 3 HP damage)
+    warrior:
+        attack with sword (18 HP damage)
+Orc race:
+    shaman:
+        imposing an improvement on the character of your squad (+50% hit power)
+        casting a curse (removing an improvement from an opponent's character)
+    bowman:
+        shoot a bow (3 HP damage)
+        blade strike (2 HP damage)
+    goblin:
+        club attack (20 HP damage)
+Undead race:
+    necromancer:
+        send an ailment (reduces the attack power of the enemy character by 50%)
+        attack (5 HP damage)
+    hunter:
+        shoot a bow (dealing 4 HP damage)
+        attack (2 HP damage)
+    zombie:
+        spear strike (18 HP damage)
